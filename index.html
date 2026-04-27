@@ -78,7 +78,27 @@
 
             <p> <strong> USING SPARTAN</strong></p>
             <p> Open VS code containg Unimelb Spartan. If you don't have this, use this link to follow the steps to download. <a href ="https://andlabunimelb.github.io/ANDLab_Guides/Coding/intro.html"> Click here </a> </p>
-            
+            <p> Navigate to Punim2033>neuropaths>neuropaths_fmri_bid</p>
+            <p> Create a new folder with the subject ID</p>
+            <small>eg. sub-001</small>
+            <p>Upload the renamed Nifti file from your desktop to its corresponding file</p>
+            <p>Open the scirpts folder. CLick on the 3D_cortical.sh file (this is the script that will turn the file into an STL which is a printable form)</p>
+            <small>Emsure you haev all the correct packages loaded. If not follow the directions in the script</small>
+            <p> Change the array number to that of the participant Id you are wanting to run.</p>
+            <small> Note: The script doesnt account fo the leading zeros, so for particpant 001 you would just put 1.</small>
+            <P> The ctl + S to save</P>
+            <p> Open a new terminal.</p>
+            <p> Key comands you will need to know</p>
+            <ol>
+                <li>Ls- show what is in that folder</li>
+                <li>Cd- Change direction to a new folder</li>
+                <li>scancel (job ID)- to cancel a job that is running </li>
+                <li>Cd..- to change direction adn go backwars one step</li>
+                <li> squeue -u (your username)- to view the queue and what is running</li>
+                <li> sbatch (script)- to run the script</li>
+            </ol>
+
+            <p>naviagte the neuropaths folder using the comands above to ensure the script 3D_Cortical.sh is in the correct location</p>
 
 
             
